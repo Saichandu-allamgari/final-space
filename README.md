@@ -168,6 +168,3 @@ Feel free to:
 ---
 
 
----
-
-This `README.md` captures the essence of your Final Space project, showcasing the technologies, features, and your hard work. Let me know if you'd like to add or adjust anything! 🚀
