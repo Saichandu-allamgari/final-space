@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Management</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./images/logo.webp" alt="Logo" class="img-fluid me-2" style="height: 40px;">
+        <h1 class="title m-0" style="font-size: 1.5rem;">Final Space</h1>
+      </a>
+  
+      <!-- Toggle Button for Mobile -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Collapsible Navigation Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./character.html">Character</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./add character.html">Add Character</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2 class="text-center">Add a New Character</h2>
+    
+    
+    <div class="mt-4 addChar">
+
+      <form id="characterForm" class="mb-4">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name"  name="name" placeholder="Add a name for the character you want to add">
+        </div>
+        <div class="mb-3">
+          <label for="species" class="form-label">Species</label>
+          <input type="text" class="form-control" id="species" name="species" placeholder=" Add a species for the character you want to add">
+        </div>
+        <div class="mb-3">
+          <label for="gender" class="form-label">Gender</label>
+          <input type="text" class="form-control" id="gender"  name="gender"  placeholder=" Add a gender for the character you want to add">
+        </div>
+        <div class="mb-3">
+          <label for="status" class="form-label">Status</label>
+          <input type="text" class="form-control" id="status"  name="status" placeholder=" Add a status for the character you want to add">
+        </div>
+        <div class="mb-3">
+          <label for="origin" class="form-label">Origin</label>
+          <input type="text" class="form-control" id="origin"  name="origin" placeholder=" Add an origin for the character you want to add">
+        </div>
+        <div class="mb-3">
+          <label for="img_url" class="form-label">Image URL</label>
+          <input type="url" class="form-control" id="img_url"  name="img_url" placeholder=" Add an image URL for the character you want to add">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Character</button>
+      </form>
+    </div>
+
+    <!-- Character Cards  -->
+    <div id="cardsCharacter" class="d-flex flex-wrap"></div>
+  </div>
+  <script src="addCharacter.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
