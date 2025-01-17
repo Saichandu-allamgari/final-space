@@ -65,7 +65,7 @@ Key highlights include:
 ## **Demo**
 
 🔗 [Live Demo on GitHub Pages](#)  
-(https://finalspacecharacters.netlify.app/)
+(https://final-space-characters-project.netlify.app/)
 
 ---
 
